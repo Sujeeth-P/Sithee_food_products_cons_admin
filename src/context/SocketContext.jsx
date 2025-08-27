@@ -18,7 +18,7 @@ export const SocketProvider = ({ children }) => {
 
   useEffect(() => {
     // Connect to Socket.IO server
-    const newSocket = io(import.meta.env.VITE_SOCKET_URL, {
+    const newSocket = io(import.meta.env.VITE_SOCKET_URL || 'https://sithee-food-products-cons-server.onrender.com', {
       transports: ['websocket', 'polling']
     });
 

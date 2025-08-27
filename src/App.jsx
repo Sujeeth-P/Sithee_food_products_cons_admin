@@ -13,7 +13,7 @@ import { StoreContext } from "./context/StoreContext";
 import { SocketProvider } from "./context/SocketContext";
 
 const App = () => {
-  const url = import.meta.env.VITE_URL;
+  const url = import.meta.env.VITE_URL || 'https://sithee-food-products-cons-server.onrender.com';
   const { token, admin } = useContext(StoreContext);
 
   // If not authenticated, show login
