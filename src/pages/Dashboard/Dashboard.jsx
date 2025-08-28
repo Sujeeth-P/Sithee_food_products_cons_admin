@@ -344,7 +344,7 @@ const Dashboard = ({ url }) => {
         </div>
 
         <div style={{ display: 'flex', alignItems: 'center', gap: '16px' }}>
-          <input
+          {/* <input
             type="text"
             placeholder="Search data..."
             style={{
@@ -354,7 +354,7 @@ const Dashboard = ({ url }) => {
               fontSize: '14px',
               outline: 'none'
             }}
-          />
+          /> */}
 
           {/* Real-time status indicator */}
           <div style={{
